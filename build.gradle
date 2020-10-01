@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.3.2.RELEASE' apply false
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter:2.3.2.RELEASE'
+	testCompile 'org.springframework.boot:spring-boot-starter-test:2.3.2.RELEASE'
+}
